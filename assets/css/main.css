@@ -101,9 +101,12 @@ input, select, textarea {
 	body {
 		background-color: #2e3141;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-		background-size: auto, cover;
-		background-attachment: fixed, fixed;
-		background-position: center, center;
+		background-size: auto,
+ cover;
+		background-attachment: fixed,
+ fixed;
+		background-position: center,
+ center;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -227,11 +230,11 @@ input, select, textarea {
 			}
 
 			a.special:not(.button):hover:before {
-				background-color: rgba(255, 255, 255, 0.025);
+				background-color: #000000;
 			}
 
 			a.special:not(.button):active:before {
-				background-color: rgba(255, 255, 255, 0.075);
+				background-color:#000000;
 			}
 
 	strong, b {
@@ -2375,6 +2378,7 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		color: #000000;
 	}
 
 		.icon:before {
@@ -2683,7 +2687,7 @@ input, select, textarea {
 
 			ul.contact li:before {
 				border-radius: 100%;
-				border: solid 2px rgba(255, 255, 255, 0.125);
+				border: solid 2px rgba(0, 0, 0, 0.125);
 				display: inline-block;
 				font-size: 0.8em;
 				height: 2.5em;
@@ -2902,7 +2906,7 @@ input, select, textarea {
 		button.icon:before,
 		.button.icon:before {
 			margin-right: 0.5em;
-			color: rgba(255, 255, 255, 0.35);
+			color: rgba(0, 0, 0, 0.35);
 		}
 
 		input[type="submit"].primary,
@@ -3230,6 +3234,7 @@ input, select, textarea {
 		-webkit-transition: -webkit-filter 0.25s ease;
 		-ms-transition: -ms-filter 0.25s ease;
 		transition: filter 0.25s ease;
+		
 	}
 
 	#menu {
@@ -3278,7 +3283,7 @@ input, select, textarea {
 			-ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
 			transition: opacity 0.35s ease, transform 0.35s ease;
 			-webkit-overflow-scrolling: touch;
-			background: #4c5c96;
+			background: #B8DDFF;
 			border-radius: 5px;
 			display: block;
 			max-width: 100%;
@@ -3464,8 +3469,10 @@ input, select, textarea {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-				background-size: auto, cover;
-				background-position: center, center;
+				background-size: auto,
+ cover;
+				background-position: center,
+ center;
 				margin-bottom: -6.5em;
 			}
 
@@ -3553,7 +3560,7 @@ input, select, textarea {
 		}
 
 		#wrapper > header h2 {
-			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
+			
 			font-size: 2em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
@@ -3572,21 +3579,25 @@ input, select, textarea {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, 0% 30%;
+			
+			background-image: url(background.jpg);
+			background-size: cover;
+			background-position: center,0% 30%;
 			margin-bottom: -6.5em;
 		}
 
 	}
 
+
+	
 	@media screen and (max-width: 980px) {
 
 		#wrapper > header {
 			padding: 11em 3em 7.375em 3em ;
-			background-size: auto, cover;
-			background-position: center, 0% 0%;
+			background-size: auto,
+ cover;
+			background-position: center,
+ 0% 0%;
 			margin-bottom: -4.75em;
 		}
 
@@ -3599,8 +3610,10 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		#wrapper > header {
+			
 			padding: 6.5em 2em 3em 2em ;
-			background-size: auto, 125%;
+			background-size: auto,
+ 125%;
 			margin-bottom: -2.5em;
 		}
 
@@ -3615,27 +3628,27 @@ input, select, textarea {
 	}
 
 	.wrapper {
-		background-color: #2e3141;
-		margin: 6.5em 0;
-		position: relative;
+		
 	}
 
 		.wrapper:before, .wrapper:after {
-			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141%3B' /%3E%3C/svg%3E");
+			background-image: src="background.jpg";
 		}
 
 		.wrapper:before {
-			box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
+			box-shadow: inset 0 -1px 0 0 #ffffff, 0 1px 0 0 #ffff;
+			background-image: src= "background.jpg";
 		}
 
 		.wrapper:after {
-			box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
+			box-shadow: inset 0 -1px 0 0 #ffffff, 0 1px 0 0 #ffffff;
 		}
 
 		.wrapper:before, .wrapper:after {
+			background-image: src="background.jpg";
 			background-repeat: no-repeat;
 			background-size: 100% 100%;
-			content: '';
+			content: src="background.jpg";;
 			display: block;
 			height: 6.5em;
 			position: absolute;
@@ -3675,13 +3688,13 @@ input, select, textarea {
 			margin: 0 auto;
 			width: 55em;
 		}
-
+ /*
 		.wrapper.style2 {
 			background-color: #353849;
 		}
 
 			.wrapper.style2:before, .wrapper.style2:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23353849%3B' /%3E%3C/svg%3E");
+				background-image: "background.jpg";
 			}
 
 			.wrapper.style2:before {
@@ -3697,7 +3710,7 @@ input, select, textarea {
 		}
 
 			.wrapper.style3:before, .wrapper.style3:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%233d4051%3B' /%3E%3C/svg%3E");
+				background-image:  "background.jpg";
 			}
 
 			.wrapper.style3:before {
@@ -3713,8 +3726,7 @@ input, select, textarea {
 		}
 
 			.wrapper.style4:before, .wrapper.style4:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23454858%3B' /%3E%3C/svg%3E");
-			}
+				background-image: src="background.jpg";	}
 
 			.wrapper.style4:before {
 				box-shadow: inset 0 -1px 0 0 #454858, 0 1px 0 0 #454858;
@@ -3729,8 +3741,7 @@ input, select, textarea {
 		}
 
 			.wrapper.style5:before, .wrapper.style5:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234d5060%3B' /%3E%3C/svg%3E");
-			}
+				background-image: src="background.jpg";	}
 
 			.wrapper.style5:before {
 				box-shadow: inset 0 -1px 0 0 #4d5060, 0 1px 0 0 #4d5060;
@@ -3745,8 +3756,7 @@ input, select, textarea {
 		}
 
 			.wrapper.style6:before, .wrapper.style6:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23555867%3B' /%3E%3C/svg%3E");
-			}
+				background-image: src="background.jpg";	}
 
 			.wrapper.style6:before {
 				box-shadow: inset 0 -1px 0 0 #555867, 0 1px 0 0 #555867;
@@ -3761,8 +3771,7 @@ input, select, textarea {
 		}
 
 			.wrapper.spotlight:before, .wrapper.spotlight:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234c5c96%3B' /%3E%3C/svg%3E");
-			}
+				background-image: src="background.jpg";	}
 
 			.wrapper.spotlight:before {
 				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
@@ -3801,6 +3810,8 @@ input, select, textarea {
 				}
 
 			.wrapper.spotlight .content {
+				margin-left: 25px;
+				margin-right: 15px;
 				width: 100%;
 				-ms-flex: 2;
 			}
@@ -3818,7 +3829,7 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight.style2 {
-				background-color: #45558d;
+				background-color: #D2CCFF;
 			}
 
 				.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
@@ -3826,11 +3837,11 @@ input, select, textarea {
 				}
 
 				.wrapper.spotlight.style2:before {
-					box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
+					box-shadow: inset 0 -1px 0 0 #D2CCFF, 0 1px 0 0 #D2CCFF;
 				}
 
 				.wrapper.spotlight.style2:after {
-					box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
+					box-shadow: inset 0 -1px 0 0 #D2CCFF, 0 1px 0 0 #D2CCFF;
 				}
 
 			.wrapper.spotlight.style3 {
@@ -3993,7 +4004,7 @@ input, select, textarea {
 				padding: 2em 1.5em 0.1em 1.5em ;
 			}
 
-		}
+		} */
 
 /* Footer */
 
@@ -4061,9 +4072,11 @@ input, select, textarea {
 
 		#footer {
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
-			background-size: auto, cover;
-			background-position: center, center;
+			background-image: url('red_wave.png');
+			background-size: auto,
+ cover;
+			background-position: center,
+ center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
@@ -4141,4 +4154,8 @@ input, select, textarea {
 			padding: 2em 1.5em 0.1em 1.5em ;
 		}
 
+	}
+	.wave {
+		display:block;
+    	width:100%;
 	}
